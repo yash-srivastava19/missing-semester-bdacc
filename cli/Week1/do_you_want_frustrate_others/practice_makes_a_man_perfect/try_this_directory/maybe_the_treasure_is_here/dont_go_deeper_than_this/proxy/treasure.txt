@@ -1,0 +1,1 @@
+Congratulations, you've found the treasure. Now, create a PR with a file in the Week1/submissions folder with the name - `submission_name.txt`(replace `name` with your actual name.) And you are good to go ! 
