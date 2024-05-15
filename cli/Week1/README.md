@@ -25,15 +25,14 @@ Only those with mastery over the command-line interface and a keen eye for detai
 - Pay close attention to file names, extensions, and hidden files/directories. The clues could be lurking anywhere.
 - Some commands like `find`, `grep`, and `cat` might come in handy for your search.
 - Don't forget to explore the "resources" directory for command references and additional hints.
+- See the resources folder for more cheatsheets.
 
 ## Submissions
 
 To submit your solution, follow these steps:
 
-1. Create a new branch or fork this repository.
-2. Add a new text file (e.g., `your_name_solution.txt`) with either the full path to the "treasure.txt" file or the contents of the file itself.
+1. Fork this repository.
+2. Add a new text file (e.g., `submission_name.txt`) under `Week1/submissions` with either the full path to the "treasure.txt" file or the contents of the file itself.
 3. Commit your changes and create a pull request with a descriptive title and brief explanation of your solution.
-
-Alternatively, you can submit your solution by sharing the text file or its contents through the provided submission channel (e.g., email, learning management system, etc.).
 
 Good luck! Raise issues if you are unclear.
