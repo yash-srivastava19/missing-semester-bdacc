@@ -15,6 +15,6 @@ def fibonacci(n):
             a = b
             b = c
         return b
-
+#Used Dynamic programming to optimise the code
 # Call the function
 print(fibonacci(35))  # Hint: This may take a long time or cause a RecursionError
