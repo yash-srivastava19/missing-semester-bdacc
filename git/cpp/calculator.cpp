@@ -21,11 +21,15 @@ int multiply(int a, int b) {
     return result;
 }
 
+bool candivide(int a,int b)
+{
+	if(b==0)
+		return false;
+	else
+		return true;
+}
 int divide(int a, int b) {
-    if(b==0) {
-      cout<< "Error:Division by Zero" <<endl;
-      return -1; // Hint : Is returning -1 the best way to handle this error?
-    }
+    
     return a / b;
 }
 
