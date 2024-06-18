@@ -3,12 +3,20 @@
 # Hint: This implementation is inefficient for large values of n
 
 def fibonacci(n):
-    if n <= 0:
+    a=0
+    b=1
+      #To find zeroth term
+    if n <= 0:    
         return 0
-    elif n == 1:
+      #To find first term
+    elif n == 1:      
         return 1
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
-
+      #For n>1
+    else:            
+       for i in range(2,n+1):
+         c=a+b
+         a=b  
+         b=c
+  return b 
 # Call the function
-print(fibonacci(35))  # Hint: This may take a long time or cause a RecursionError
+print(fibonacci(35))  
