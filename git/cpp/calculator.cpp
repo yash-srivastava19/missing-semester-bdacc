@@ -15,17 +15,16 @@ int subtract(int a, int b) {
 }
 
 int multiply(int a, int b) {
-    int result = 0;
-    for (int i = 0; i < b; i++) {
-        result += a;  // Hint: This is not an efficient way to multiply
-    }
+    int result = a;
+    result *= b;  //This is an efficient way to multiply rather than repeated addition
+    
     return result;
 }
 
 int divide(int a, int b) {
-    if (b == 0) {
-        cout << "Error: Division by zero" << endl;
-        return -1;  // Hint: Is returning -1 the best way to handle this error?
+    if(b==0) {
+      cout<< "Error:Division by Zero" <<endl;
+      return -1; // Hint : Is returning -1 the best way to handle this error?
     }
     return a / b;
 }
@@ -52,7 +51,7 @@ int main() {
             result = multiply(num1, num2);
             break;
         case '/':
-            result = divide(num1, num2);
+	    result = divide(num1, num2);
             break;
         default:
             cout << "Invalid operation" << endl;
@@ -60,6 +59,5 @@ int main() {
     }
 
     cout << "Result: " << result << endl;  // Hint: What if the result is not valid?
-
-    return 0;
+	return 0;
 }
