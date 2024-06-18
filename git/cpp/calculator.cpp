@@ -3,6 +3,7 @@
 // Hint: There are multiple issues with this implementation
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -37,13 +38,14 @@ int main() {
     int num1, num2;
     char op;
 
-    cout << "Enter an operation (+, -, *, /): ";
+    cout << "Enter an operator (+, -, *, /): ";
     cin >> op;
 
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
     int result;
+    bool chkres=true;
     switch (op) {
         case '+':
             result = add(num1, num2);
@@ -55,13 +57,15 @@ int main() {
             result = multiply(num1, num2);
             break;
         case '/':
+	    chkres=candivide(num1,num2);
+	    if(chkres)
 	    result = divide(num1, num2);
             break;
         default:
-            cout << "Invalid operation" << endl;
+            cout << "Invalid operator" << endl;
             return 1;
     }
 
-    cout << "Result: " << result << endl;  // Hint: What if the result is not valid?
+    cout << ( chkres ? "Result: " + to_string(result) : "Invalid operands") << endl;  // Checking for validity of result using ternary operator
 	return 0;
 }
