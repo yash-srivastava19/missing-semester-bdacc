@@ -15,10 +15,7 @@ int subtract(int a, int b) {
 }
 
 int multiply(int a, int b) {
-    int result = 0;
-    for (int i = 0; i < b; i++) {
-        result += a;  // Hint: This is not an efficient way to multiply
-    }
+    int result = a * b;
     return result;
 }
 
