@@ -22,7 +22,7 @@ int multiply(int a, int b) {
 int divide(int a, int b) {
     if (b == 0) {
         cout << "Error: Division by zero" << endl;
-        return -1;  // Hint: Is returning -1 the best way to handle this error?
+        return INT_MIN;  // Hint: Is returning -1 the best way to handle this error?
     }
     return a / b;
 }
@@ -55,6 +55,9 @@ int main() {
             cout << "Invalid operation" << endl;
             return 1;
     }
+
+    if(op == '/' && result == INT_MIN)
+    return 0;
 
     cout << "Result: " << result << endl;  // Hint: What if the result is not valid?
 
