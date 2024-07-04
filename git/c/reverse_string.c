@@ -8,16 +8,16 @@
 void reverse_string(char str[]) {
     int i, j;
     char temp;
-    for (i = 0, j = strlen(str) - 1; i < j; i++, j--) {
+    for (i = 0, j = strlen(str) - 1; i <= j; i++, j--) {
         temp = str[i];
-        str[i] = str[j]
-        str[j] = temp;  // Hint: A semicolon is missing somewhere.
+        str[i] = str[j];
+        str[j] = temp;  
     }
 }
 
 int main() {
     char str[] = "Hello, World!";
     reverse_string(str);
-    printf("%s\n", str);  // Hint: The output may not be as expected
+    printf("%s\n", str);  
     return 0;
 }
